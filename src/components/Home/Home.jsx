@@ -2,11 +2,15 @@ import React, { useState, useEffect, useRef } from "react";
 import { auth, db } from "../firebase";
 import { doc, getDoc } from "firebase/firestore";
 import { onAuthStateChanged } from "firebase/auth";
-import { GoogleMap, LoadScript, Marker } from "@react-google-maps/api";
+import {
+  GoogleMap,
+  InfoWindow,
+  LoadScript,
+  Marker,
+} from "@react-google-maps/api";
 import { toast } from "react-toastify";
 import "./Home.css";
 import { useNavigate } from "react-router-dom";
-
 
 const API_KEY = import.meta.env.VITE_MAP_API_KEY;
 
@@ -14,9 +18,10 @@ const Home = () => {
   const [user, setUser] = useState(null);
   const [location, setLocation] = useState(null);
   const [hospitals, setHospitals] = useState([]);
+  const [selectedHospital, setSelectedHospital] = useState(false);
   const mapRef = useRef(null);
 
-  const navigate=useNavigate();
+  const navigate = useNavigate();
 
   useEffect(() => {
     const unsubscribe = onAuthStateChanged(auth, async (currentUser) => {
@@ -114,16 +119,17 @@ const Home = () => {
     }
   }, [location]);
 
-  const handleLogout=async()=>{
-    try{
+  console.log(selectedHospital)
+
+  const handleLogout = async () => {
+    try {
       await auth.signOut();
       toast.success("Logout successfully");
       navigate("/");
-    }
-    catch(error){
+    } catch (error) {
       console.log(error);
-      }
-  }
+    }
+  };
 
   return (
     <div className="map-main-container">
@@ -153,6 +159,7 @@ const Home = () => {
               {hospitals.map((hospital, index) => (
                 <Marker
                   key={index}
+                  onClick={() => setSelectedHospital(hospital)}
                   position={{
                     lat: hospital.geometry.location.lat(),
                     lng: hospital.geometry.location.lng(),
@@ -160,14 +167,29 @@ const Home = () => {
                   // label={hospital.name}
                 />
               ))}
+
+              {selectedHospital && (
+                <InfoWindow
+                  position={{
+                    lat: selectedHospital.geometry.location.lat(),
+                    lng: selectedHospital.geometry.location.lng(),
+                  }}
+                  onCloseClick={()=>setSelectedHospital(null)}
+                  mapContainerClassName="info-container"
+                >
+                  <div className="info-window">
+                    <h4>{selectedHospital.name}</h4>
+                  </div>
+                </InfoWindow>
+              )}
             </GoogleMap>
           ) : (
             <p className="loading-message">Loading map...</p>
           )}
         </LoadScript>
-          <button type="button" className="logout-btn" onClick={handleLogout}>
-            Logout
-          </button>
+        <button type="button" className="logout-btn" onClick={handleLogout}>
+          Logout
+        </button>
       </div>
     </div>
   );
