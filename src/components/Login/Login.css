@@ -1,0 +1,143 @@
+.main-container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Arial", sans-serif;
+  background-image: url("/img.jpg");
+  background-size: cover;
+}
+
+.login-container {
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  width: 90%;
+  max-width: 400px;
+  text-align: center;
+  backdrop-filter: blur(10px);
+  background: rgba(188, 218, 228, 0.4);
+  border: 1px solid black;
+}
+
+.heading {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  margin-bottom: 15px;
+}
+
+.input-group label {
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.input-group input {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+  transition: 0.3s;
+}
+
+.input-group input:focus {
+  border-color: #1e3c72;
+  box-shadow: 0px 0px 5px rgba(30, 60, 114, 0.3);
+}
+
+.password-wrapper {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.password-wrapper input {
+  flex: 1;
+  padding-right: 40px;
+}
+
+.eye-icon {
+  position: absolute;
+  right: 10px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.btn {
+  width: 30%;
+  margin: 10px;
+  background: #1e3c72;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #839fc8;
+}
+
+.google-btn {
+  width: 70%;
+  margin: 10px auto;
+  padding: 12px;
+  background: rgb(192, 183, 219);
+  color: #333;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s;
+}
+
+.google-btn img {
+  width: 24px;
+  margin-right: 8px;
+}
+
+.google-btn:hover {
+  background: #b0c2e7;
+}
+
+.register-link {
+  margin-top: 15px;
+  font-size: 14px;
+}
+
+.register-link a {
+  color: #1e3c72;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.register-link a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 480px) {
+  .main-container {
+    padding: 20px;
+  }
+  .login-container {
+    width: 95%;
+    padding: 20px;
+  }
+  .google-btn {
+    padding: 4px;
+    height: 45px;
+  }
+}
