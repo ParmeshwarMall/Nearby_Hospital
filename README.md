@@ -1,8 +1,32 @@
-# React + Vite
+# Hospital Finder - React App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+🚀 A web application that allows users to login/register using email & password or Google Sign-In, fetches their current location, and displays nearby hospitals on Google Maps using the Google Places API.
 
-Currently, two official plugins are available:
+🔗 Live Demo: https://medilocator.netlify.app/
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+📌 Features
+✅ User Authentication (Login/Register via Email & Password or Google Sign-In)
+✅ Google Firebase Authentication for secure login
+✅ Fetch User's Current Location using Geolocation API
+✅ Display Nearby Hospitals using Google Places API
+✅ Interactive Google Map with markers for hospitals and user location
+✅ Toast Notifications for a better user experience
+✅ Responsive Design for all devices
+
+📷 Screenshots
+
+![Screenshot 2025-02-13 182030](https://github.com/user-attachments/assets/b24a2b93-4ad9-47a3-92a7-42b8c925eb89)
+![Screenshot 2025-02-13 182114](https://github.com/user-attachments/assets/8cb59113-9d4d-4804-9a29-4e1f62a04491)
+
+🛠 Tech Stack
+* Frontend: React.js, React Router
+* Authentication: Firebase Authentication
+* Database: Firestore (Firebase)
+* Maps & Location: Google Maps API, Google Places API, Geolocation API
+* State Management: React Hooks (useState, useEffect)
+* UI/UX: Tailwind CSS / Custom CSS
+* Notifications: React-Toastify
+
+
+
+
