@@ -5,13 +5,13 @@
 # Live Demo: https://medilocator.netlify.app/
 
 # Features
-✅ User Authentication (Login/Register via Email & Password or Google Sign-In)
-✅ Google Firebase Authentication for secure login
-✅ Fetch User's Current Location using Geolocation API
-✅ Display Nearby Hospitals using Google Places API
-✅ Interactive Google Map with markers for hospitals and user location
-✅ Toast Notifications for a better user experience
-✅ Responsive Design for all devices
+* User Authentication (Login/Register via Email & Password or Google Sign-In)
+* Google Firebase Authentication for secure login
+* Fetch User's Current Location using Geolocation API
+* Display Nearby Hospitals using Google Places API
+* Interactive Google Map with markers for hospitals and user location
+* Toast Notifications for a better user experience
+* Responsive Design for all devices
 
 # Screenshots
 
