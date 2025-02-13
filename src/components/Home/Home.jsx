@@ -113,14 +113,6 @@ const Home = () => {
     });
   };
 
-  useEffect(() => {
-    if (location) {
-      fetchNearbyHospitals(location.lat, location.lng);
-    }
-  }, [location]);
-
-  console.log(selectedHospital)
-
   const handleLogout = async () => {
     try {
       await auth.signOut();
