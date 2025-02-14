@@ -50,7 +50,7 @@ A web application that allows users to login/register using email & password or 
 * Enable Authentication (Email/Password & Google Sign-In)
 * Enable Firestore Database
 
-## Run the application:
+## Run the application
 
 ```npm run dev```
 
