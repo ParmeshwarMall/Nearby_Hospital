@@ -36,14 +36,18 @@ A web application that allows users to login/register using email & password or 
 ### Installation
 
 Clone the repository:
+
 `git clone https://github.com/ParmeshwarMall/Nearby_Hospital.git`
+
 `cd Nearby_Hospital`
 
 Install dependencies:
+
 `npm install`
 
 Run the application:
-npm run dev
+
+`npm run dev`
 
 The app will be running on http://localhost:5173/.
 
