@@ -35,9 +35,9 @@ A web application that allows users to login/register using email & password or 
 
 ## Clone the Repository
 
-`git clone https://github.com/ParmeshwarMall/Nearby_Hospital.git`
+**git clone https://github.com/ParmeshwarMall/Nearby_Hospital.git
 
-`cd Nearby_Hospital`
+**cd Nearby_Hospital
 
 ## Install Dependencies
 
