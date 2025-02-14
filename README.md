@@ -27,25 +27,29 @@ A web application that allows users to login/register using email & password or 
 * UI/UX: Custom CSS
 * Notifications: React-Toastify
 
-## Getting Started
+##  Setup & Installation
 
 ### Prerequisites
 * Node.js and npm installed on your machine.
 * Google API key for Google Maps and Google Sign-In.
 
-### Installation
-
-Clone the repository:
+## Clone the Repository
 
 `git clone https://github.com/ParmeshwarMall/Nearby_Hospital.git`
-
 `cd Nearby_Hospital`
 
-Install dependencies:
+## Install Dependencies
 
 `npm install`
 
-Run the application:
+## Set Up Firebase
+
+* Go to the Firebase Console
+* Create a new Firebase project
+* Enable Authentication (Email/Password & Google Sign-In)
+* Enable Firestore Database
+
+## Run the application:
 
 `npm run dev`
 
