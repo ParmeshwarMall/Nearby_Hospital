@@ -29,18 +29,18 @@ A web application that allows users to login/register using email & password or 
 
 ## Getting Started
 
-###Prerequisites
+### Prerequisites
 * Node.js and npm installed on your machine.
 * Google API key for Google Maps and Google Sign-In.
 
-###Installation
+### Installation
 
 Clone the repository:
-git clone https://github.com/ParmeshwarMall/Nearby_Hospital.git
-cd Nearby_Hospital
+`git clone https://github.com/ParmeshwarMall/Nearby_Hospital.git`
+`cd Nearby_Hospital`
 
 Install dependencies:
-npm install
+`npm install`
 
 Run the application:
 npm run dev
