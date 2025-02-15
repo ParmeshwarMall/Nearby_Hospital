@@ -33,24 +33,24 @@ A web application that allows users to login/register using email & password or 
 * Node.js and npm installed on your machine.
 * Google API key for Google Maps and Google Sign-In.
 
-## Clone the Repository
+### Clone the Repository
 
 ```git clone https://github.com/ParmeshwarMall/Nearby_Hospital.git```
 
 ```cd Nearby_Hospital```
 
-## Install Dependencies
+### Install Dependencies
 
 ```npm install```
 
-## Set Up Firebase
+### Set Up Firebase
 
 * Go to the Firebase Console
 * Create a new Firebase project
 * Enable Authentication (Email/Password & Google Sign-In)
 * Enable Firestore Database
 
-## Run the application
+### Run the application
 
 ```npm run dev```
 
